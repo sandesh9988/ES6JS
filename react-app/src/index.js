@@ -7,7 +7,7 @@
 
 // sayHello();
 
-//if  we have function inside an object  we refered that function  as a method
+//if  we have function inside an object  we refered that function  as a method  --------------------------------
 
 // const person = {
 //   name: 'Andy',
@@ -22,18 +22,46 @@
 // person[targetMember.value] = 'John';
 
 
-//this keyword
+//this keyword --------------------------------
 
-const person = {
-  name: 'Andy',
-  walk() {
-console.log(this);
-   }
+// const person = {
+//   name: 'Andy',
+//   walk() {
+// console.log(this);
+//    }
 
-};
+// };
 
-person.walk();
-const walk = person.walk.bind(person);
+// person.walk();
+// const walk = person.walk.bind(person);
+// walk();
 
+//arrow function  --------------------------------
 
-walk();
+//old js
+// const square =  function(number) {
+//   return number * number;
+// }
+
+//modern js es6
+
+const square =  number =>  number * number;
+
+console.log(square(5));
+
+//more eg
+
+const jobs = [
+  { id: 1, isActive: true},
+  { id: 2, isActive: true},
+  { id: 3, isActive: false},
+];
+
+//below  code is old js for filtering active jobs
+
+// const activeJobs = jobs.filter(function(job) { return job.isActive; });
+// console.log(activeJobs);
+
+//using arrow function for above
+const activeJobs = jobs.filter(job =>  job.isActive );
+console.log(activeJobs);
