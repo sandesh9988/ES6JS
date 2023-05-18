@@ -45,16 +45,16 @@
 
 //modern js es6
 
-const square = number => number * number;
+const square =  number =>  number * number;
 
 console.log(square(5));
 
 //more eg
 
 const jobs = [
-  { id: 1, isActive: true },
-  { id: 2, isActive: true },
-  { id: 3, isActive: false },
+  { id: 1, isActive: true},
+  { id: 2, isActive: true},
+  { id: 3, isActive: false},
 ];
 
 //below  code is old js for filtering active jobs
@@ -63,36 +63,15 @@ const jobs = [
 // console.log(activeJobs);
 
 //using arrow function for above
-const activeJobs = jobs.filter(job => job.isActive);
+const activeJobs = jobs.filter(job =>  job.isActive );
 console.log(activeJobs);
 
 
 //Arrow functions and this  --------------------------------
 
-//patterm to use call back functions in old js
-// const person = {  //settimeout will execute function after 1sec
-//   talk() {
-//     var self = this;
-//     setTimeout(function () { 
-//       console.log('self', self);
-//     }, 1000);
-//   }
-// };
-
-// person.talk();
-
-//modern js es6
-
-const person = {  //settimeout will execute function after 1sec
+const person = {
   talk() {
-    var self = this;
-    setTimeout(() => { 
-      console.log('this', this);
-    }, 1000);
+    
   }
-};
+}
 
-person.talk();
-
-
-//array map ------------------------

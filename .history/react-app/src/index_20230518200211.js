@@ -69,30 +69,14 @@ console.log(activeJobs);
 
 //Arrow functions and this  --------------------------------
 
-//patterm to use call back functions in old js
-// const person = {  //settimeout will execute function after 1sec
-//   talk() {
-//     var self = this;
-//     setTimeout(function () { 
-//       console.log('self', self);
-//     }, 1000);
-//   }
-// };
-
-// person.talk();
-
-//modern js es6
-
 const person = {  //settimeout will execute function after 1sec
   talk() {
     var self = this;
-    setTimeout(() => { 
-      console.log('this', this);
+    setTimeout(function () { 
+      console.log('self', self);
     }, 1000);
   }
 };
 
 person.talk();
 
-
-//array map ------------------------

@@ -95,4 +95,4 @@ const person = {  //settimeout will execute function after 1sec
 person.talk();
 
 
-//array map ------------------------
+//array map 

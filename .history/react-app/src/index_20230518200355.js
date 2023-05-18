@@ -87,12 +87,9 @@ const person = {  //settimeout will execute function after 1sec
   talk() {
     var self = this;
     setTimeout(() => { 
-      console.log('this', this);
+      console.log('self', self);
     }, 1000);
   }
 };
 
 person.talk();
-
-
-//array map ------------------------

@@ -85,7 +85,7 @@ console.log(activeJobs);
 
 const person = {  //settimeout will execute function after 1sec
   talk() {
-    var self = this;
+
     setTimeout(() => { 
       console.log('this', this);
     }, 1000);
@@ -93,6 +93,3 @@ const person = {  //settimeout will execute function after 1sec
 };
 
 person.talk();
-
-
-//array map ------------------------
